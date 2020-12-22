@@ -6,14 +6,14 @@
 [![nuget Downloads](https://img.shields.io/nuget/dt/xCONFLiCTiONx.Logger)](https://www.nuget.org/packages/xCONFLiCTiONx.Logger/)
 [![GitHub stars](https://img.shields.io/github/stars/xCONFLiCTiONx/EasyLogger)](https://github.com/xCONFLiCTiONx/EasyLogger/stargazers)
 
+### Latest changes
+*You can now backup the log file in x days. Example below...*
+
 ### Prerequisites
 
 .NET framework 4
 
 ### How to use the Logger
-
-Backup the logfile. Do this before you add a listener. This is not mandatory but will increase in size exponentially.  
-You can stop the listener anytime and run a backup at anytime.
 
 ```C#
 // Backup immediately
