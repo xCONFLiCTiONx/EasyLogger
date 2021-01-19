@@ -17,8 +17,8 @@ public abstract class LogBase
     /// Backup log files to [FileName].bak; this is to prevent huge log files
     /// </summary>
     /// <param name="LogFilePath"></param>
-    /// <param name="timeSpan">Days until backed up; uses file creation time</param>
-    public abstract void BackupLogs(string LogFilePath, int timeSpan = 0);
+    /// <param name="timeSpanInDays">Days until backed up; uses file creation time</param>
+    public abstract void BackupLogs(string LogFilePath, int timeSpanInDays = 0);
     /// <summary>
     /// Insert [error] in the line
     /// </summary>

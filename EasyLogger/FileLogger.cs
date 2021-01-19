@@ -14,26 +14,29 @@ public class FileLogger : LogBase
     /// Backup log files to [FileName].bak; this is to prevent huge log files
     /// </summary>
     /// <param name="LogFilePath"></param>
-    /// <param name="timeSpan">Days until backed up; uses file creation time</param>
-    public override void BackupLogs(string LogFilePath, int timeSpan = 0)
+    /// <param name="timeSpanInDays">Days until backed up; uses file creation time</param>
+    public override void BackupLogs(string LogFilePath, int timeSpanInDays = 0)
     {
-        if (timeSpan > 0)
+        if (timeSpanInDays > 0)
         {
-            FileInfo file = new FileInfo(LogFilePath);
-            if (DateTime.UtcNow - file.CreationTimeUtc > TimeSpan.FromDays(timeSpan))
+            if (File.Exists(LogFilePath))
             {
-                if (!Directory.Exists(Path.GetDirectoryName(LogFilePath)))
+                FileInfo file = new FileInfo(LogFilePath);
+                if (DateTime.UtcNow - file.CreationTimeUtc > TimeSpan.FromDays(timeSpanInDays))
                 {
-                    Directory.CreateDirectory(Path.GetDirectoryName(LogFilePath));
-                }
-                if (File.Exists(LogFilePath + ".bak"))
-                {
-                    File.Delete(LogFilePath + ".bak");
-                }
-                if (File.Exists(LogFilePath))
-                {
-                    File.Copy(LogFilePath, LogFilePath + ".bak");
-                    File.Delete(LogFilePath);
+                    if (!Directory.Exists(Path.GetDirectoryName(LogFilePath)))
+                    {
+                        Directory.CreateDirectory(Path.GetDirectoryName(LogFilePath));
+                    }
+                    if (File.Exists(LogFilePath + ".bak"))
+                    {
+                        File.Delete(LogFilePath + ".bak");
+                    }
+                    if (File.Exists(LogFilePath))
+                    {
+                        File.Copy(LogFilePath, LogFilePath + ".bak");
+                        File.Delete(LogFilePath);
+                    }
                 }
             }
         }
