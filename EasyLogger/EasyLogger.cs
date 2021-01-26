@@ -28,7 +28,7 @@ public static class EasyLogger
     /// <summary>
     /// Backup log files to [FileName].bak; this is to prevent huge log files
     /// </summary>
-    /// <param name="LogFilePath"></param>
+    /// <param name="LogFilePath">Path to the log file</param>
     /// <param name="timeSpanInDays">Days until backed up; uses file creation time</param>
     public static void BackupLogs(string LogFilePath, int timeSpanInDays = 0)
     {

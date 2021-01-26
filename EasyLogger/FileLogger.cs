@@ -17,6 +17,10 @@ public class FileLogger : LogBase
     /// <param name="timeSpanInDays">Days until backed up; uses file creation time</param>
     public override void BackupLogs(string LogFilePath, int timeSpanInDays = 0)
     {
+        if (!Directory.Exists(Path.GetDirectoryName(LogFilePath)))
+        {
+            Directory.CreateDirectory(Path.GetDirectoryName(LogFilePath));
+        }
         if (timeSpanInDays > 0)
         {
             if (File.Exists(LogFilePath))
@@ -24,28 +28,17 @@ public class FileLogger : LogBase
                 FileInfo file = new FileInfo(LogFilePath);
                 if (DateTime.UtcNow - file.CreationTimeUtc > TimeSpan.FromDays(timeSpanInDays))
                 {
-                    if (!Directory.Exists(Path.GetDirectoryName(LogFilePath)))
-                    {
-                        Directory.CreateDirectory(Path.GetDirectoryName(LogFilePath));
-                    }
                     if (File.Exists(LogFilePath + ".bak"))
                     {
                         File.Delete(LogFilePath + ".bak");
                     }
-                    if (File.Exists(LogFilePath))
-                    {
-                        File.Copy(LogFilePath, LogFilePath + ".bak");
-                        File.Delete(LogFilePath);
-                    }
+                    File.Copy(LogFilePath, LogFilePath + ".bak");
+                    File.Delete(LogFilePath);
                 }
             }
         }
         else
         {
-            if (!Directory.Exists(Path.GetDirectoryName(LogFilePath)))
-            {
-                Directory.CreateDirectory(Path.GetDirectoryName(LogFilePath));
-            }
             if (File.Exists(LogFilePath + ".bak"))
             {
                 File.Delete(LogFilePath + ".bak");
