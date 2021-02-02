@@ -7,7 +7,7 @@ public abstract class LogBase
     /// <summary>
     /// Start the logging service
     /// </summary>
-    /// <param name="LogFilePath"></param>
+    /// <param name="LogFilePath">Path to the log file</param>
     public abstract void AddListener(string LogFilePath);
     /// <summary>
     /// Stops and disposes of the logging service

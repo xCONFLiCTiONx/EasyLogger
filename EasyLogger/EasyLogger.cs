@@ -41,7 +41,7 @@ public static class EasyLogger
     /// <summary>
     /// Start the logging service
     /// </summary>
-    /// <param name="LogFilePath"></param>
+    /// <param name="LogFilePath">Path to the log file</param>
     public static void AddListener(string LogFilePath)
     {
         Directory.CreateDirectory(LogDirectory);

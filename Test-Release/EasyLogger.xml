@@ -36,7 +36,7 @@
             <summary>
             Start the logging service
             </summary>
-            <param name="LogFilePath"></param>
+            <param name="LogFilePath">Path to the log file</param>
         </member>
         <member name="M:EasyLogger.RemoveListener">
             <summary>
@@ -76,7 +76,7 @@
             <summary>
             Start the logging service
             </summary>
-            <param name="LogFilePath"></param>
+            <param name="LogFilePath">Path to the log file</param>
         </member>
         <member name="M:LogBase.RemoveListener">
             <summary>
@@ -123,7 +123,7 @@
             <summary>
             Backup log files to [FileName].bak; this is to prevent huge log files
             </summary>
-            <param name="LogFilePath"></param>
+            <param name="LogFilePath">Path to the log file</param>
             <param name="timeSpanInDays">Days until backed up; uses file creation time</param>
         </member>
         <member name="M:FileLogger.Error(System.String)">
