@@ -32,6 +32,7 @@ public class FileLogger : LogBase
                     {
                         File.Delete(LogFilePath + ".bak");
                     }
+                    File.SetCreationTime(LogFilePath, DateTime.Now);
                     File.Copy(LogFilePath, LogFilePath + ".bak");
                     File.Delete(LogFilePath);
                 }
@@ -41,6 +42,7 @@ public class FileLogger : LogBase
         {
             if (File.Exists(LogFilePath + ".bak"))
             {
+                File.SetCreationTime(LogFilePath, DateTime.Now);
                 File.Delete(LogFilePath + ".bak");
             }
             if (File.Exists(LogFilePath))
