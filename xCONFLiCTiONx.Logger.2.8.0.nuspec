@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>xCONFLiCTiONx.Logger</id>
+    <version>2.8.0</version>
+    <title>Simple Lightweight Logger</title>
+    <authors>xCONFLiCTiONx</authors>
+    <owners>xCONFLiCTiONx</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <projectUrl>https://github.com/xCONFLiCTiONx/EasyLogger</projectUrl>
+    <repository type="git" url="https://github.com/xCONFLiCTiONx/EasyLogger.git"  />
+    <description>Simple, lightweight logger for Windows .Net Applications</description>
+    <releaseNotes>Simple, lightweight logger for Windows .Net Applications. Fixed file creation time for log file backups.</releaseNotes>
+    <copyright>Copyright 2020</copyright>
+    <tags>Simple lightweight logger</tags>
+    <frameworkReferences>
+      <group targetFramework=".NETFramework4.0-Client">
+        <frameworkReference name="net40-client" />
+      </group>
+    </frameworkReferences>
+    <dependencies>
+      <group targetFramework=".NETFramework4.0-Client" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Release\EasyLogger.dll" target="lib\net40-client\EasyLogger.dll" />
+    <file src="Release\EasyLogger.xml" target="lib\net40-client\EasyLogger.xml" />
+  </files>
+</package>
