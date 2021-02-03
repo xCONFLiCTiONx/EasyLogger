@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>xCONFLiCTiONx.Logger</id>
-    <version>2.8.0</version>
+    <version>2.9.0</version>
     <title>Simple Lightweight Logger</title>
     <authors>xCONFLiCTiONx</authors>
     <owners>xCONFLiCTiONx</owners>
@@ -11,7 +11,7 @@
     <projectUrl>https://github.com/xCONFLiCTiONx/EasyLogger</projectUrl>
     <repository type="git" url="https://github.com/xCONFLiCTiONx/EasyLogger.git"  />
     <description>Simple, lightweight logger for Windows .Net Applications</description>
-    <releaseNotes>Simple, lightweight logger for Windows .Net Applications. Fixed file creation time for log file backups.</releaseNotes>
+    <releaseNotes>Updated some classes and changed CreationTimeUTC to CreationTime.</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>Simple lightweight logger</tags>
     <frameworkReferences>
