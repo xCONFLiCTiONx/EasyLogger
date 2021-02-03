@@ -26,7 +26,7 @@ public class FileLogger : LogBase
             if (File.Exists(LogFilePath))
             {
                 FileInfo file = new FileInfo(LogFilePath);
-                if (DateTime.UtcNow - file.CreationTimeUtc > TimeSpan.FromDays(timeSpanInDays))
+                if (DateTime.Now - file.CreationTime > TimeSpan.FromDays(timeSpanInDays))
                 {
                     if (File.Exists(LogFilePath + ".bak"))
                     {
