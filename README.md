@@ -16,7 +16,7 @@
 
 ### How to use the Logger
 
-```C#
+```c#
 // Backup immediately
 EasyLogger.BackupLogs(EasyLogger.LogFile);
 
@@ -27,14 +27,14 @@ EasyLogger.BackupLogs(EasyLogger.LogFile, 30);
 Add a listener to enable logging using the default location.  
 The default location is `[SystemDrive]\ProgramData\EasyLogger\[ApplicationName]\[UserName]\[ApplicationName].log`
 
-```C#
+```c#
 // Initiate logging
 EasyLogger.AddListener(EasyLogger.LogFile);
 ```
 
 Log some quick information.
 
-```C#
+```c#
 // Log something
 EasyLogger.Info("Log something...");
 ```
@@ -45,14 +45,14 @@ EasyLogger.Info("Log something...");
 
 Stop the listener and disable logging.
 
-```C#
+```c#
 // Dispose of the logger
 EasyLogger.RemoveListener();
 ```
 
 Set a custom location for the log file.
 
-```C#
+```c#
 // Backup custom log path
 var CustomLog = AppDomain.CurrentDomain.BaseDirectory + "LOGGING" + "\\TEST.log";
 EasyLogger.BackupLogs(CustomLog);
@@ -60,14 +60,14 @@ EasyLogger.BackupLogs(CustomLog);
 
 Add a listener to enable logging using a custom location.
 
-```C#
+```c#
 // Initiate logging with a custom log path
 EasyLogger.AddListener(CustomLog);
 ```
 
 Used to log information
 
-```C#
+```c#
 // Log something
 EasyLogger.Info("Log something...");
 ```
@@ -76,7 +76,7 @@ EasyLogger.Info("Log something...");
 
 Used to log warnings
 
-```C#
+```c#
 // Log a warning
 EasyLogger.Warning("Don't forget to dispose!");
 ```
@@ -85,7 +85,7 @@ EasyLogger.Warning("Don't forget to dispose!");
 
 Used to log errors
 
-```C#
+```c#
 // Log an issue
 EasyLogger.Error(ex);
 ```
@@ -94,7 +94,7 @@ EasyLogger.Error(ex);
 
 To disable logging and dispose.
 
-```C#
+```c#
 // Dispose of the logger
 EasyLogger.RemoveListener();
 ```
