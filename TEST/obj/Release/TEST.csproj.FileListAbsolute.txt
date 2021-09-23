@@ -1,0 +1,9 @@
+C:\Users\mhall\Source\repos\EasyLogger\Test-Release\TEST.exe.config
+C:\Users\mhall\Source\repos\EasyLogger\Test-Release\TEST.exe
+C:\Users\mhall\Source\repos\EasyLogger\TEST\obj\Release\TEST.csprojAssemblyReference.cache
+C:\Users\mhall\Source\repos\EasyLogger\TEST\obj\Release\TEST.TEST.resources
+C:\Users\mhall\Source\repos\EasyLogger\TEST\obj\Release\TEST.Properties.Resources.resources
+C:\Users\mhall\Source\repos\EasyLogger\TEST\obj\Release\TEST.csproj.GenerateResource.cache
+C:\Users\mhall\Source\repos\EasyLogger\TEST\obj\Release\TEST.csproj.CoreCompileInputs.cache
+C:\Users\mhall\Source\repos\EasyLogger\TEST\obj\Release\TEST.csproj.CopyComplete
+C:\Users\mhall\Source\repos\EasyLogger\TEST\obj\Release\TEST.exe

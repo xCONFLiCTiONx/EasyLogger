@@ -1,0 +1,4 @@
+C:\Users\mhall\Source\repos\EasyLogger\Release\EasyLogger.dll
+C:\Users\mhall\Source\repos\EasyLogger\Release\EasyLogger.xml
+C:\Users\mhall\Source\repos\EasyLogger\EasyLogger\obj\Release\EasyLogger.csproj.CoreCompileInputs.cache
+C:\Users\mhall\Source\repos\EasyLogger\EasyLogger\obj\Release\EasyLogger.dll
