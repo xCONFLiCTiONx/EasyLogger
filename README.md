@@ -6,6 +6,10 @@
 [![nuget Downloads](https://img.shields.io/nuget/dt/xCONFLiCTiONx.Logger)](https://www.nuget.org/packages/xCONFLiCTiONx.Logger/)
 [![GitHub stars](https://img.shields.io/github/stars/xCONFLiCTiONx/EasyLogger)](https://github.com/xCONFLiCTiONx/EasyLogger/stargazers)
 
+## Donations
+
+Feel free to donate to my [PayPal.Me/xCONFLiCTiONx](https://PayPal.Me/xCONFLiCTiONx) account. I work hard on these projects.
+
 ### Latest changes
 
 *You can now backup the log file in x days. Example below...*
